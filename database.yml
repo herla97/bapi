@@ -3,7 +3,7 @@ development:
   dialect: postgres
   database: bapi_development
   user: postgres
-  password: postgres
+  password:
   host: 127.0.0.1
   pool: 5
 

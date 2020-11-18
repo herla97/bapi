@@ -14,6 +14,9 @@ import (
 	"github.com/gobuffalo/x/sessions"
 	"github.com/rs/cors"
 
+	// Swagger config docs
+	_ "bapi/docs"
+
 	buffaloSwagger "github.com/swaggo/buffalo-swagger"
 	"github.com/swaggo/buffalo-swagger/swaggerFiles"
 )
@@ -22,6 +25,15 @@ import (
 // application is being run. Default is "development".
 var ENV = envy.Get("GO_ENV", "development")
 var app *buffalo.App
+
+// @contact.name API Support
+// @contact.url http://www.swagger.io/support
+// @contact.email support@swagger.io
+
+// @license.name Apache 2.0
+// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+
+// @termsOfService http://swagger.io/terms/
 
 // App is where all routes and middleware for buffalo
 // should be defined. This is the nerve center of your

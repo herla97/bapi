@@ -1,4 +1,26 @@
 info:
-  contact: {}
-paths: {}
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+paths:
+  /:
+    get:
+      consumes:
+      - application/json
+      description: Get welcomen json buffalo
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Welcome to Buffalo!
+          schema:
+            type: string
+      summary: Show home page buffalo
+      tags:
+      - home
 swagger: "2.0"
